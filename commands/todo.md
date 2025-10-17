@@ -2,7 +2,7 @@
 description: Document deferred problem or opportunity
 ---
 
-# /_artifacts/todo
+# /todo
 
 <instructions>
 Create issue document for a discovered problem or feature idea to implement later.

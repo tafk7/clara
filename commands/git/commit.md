@@ -1,5 +1,5 @@
 ---
-description: Generate commit message from changes
+description: Generate commit message from staged changes
 ---
 
 # /git:commit
@@ -13,7 +13,7 @@ Generate commit message from staged changes
 2. Describe only the content changes, not improvements or claims
 3. Use conventional commit format (type: description)
 4. Present as executable git command
-Write concisely and do not mention Claude code
+Write concisely and do *not* attribute Claude code. It's gauche to brag.
 </approach>
 
 <context>

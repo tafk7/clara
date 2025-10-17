@@ -58,6 +58,7 @@ The framework provides 20 slash commands organized by purpose:
 ### Git Operations
 - `/git:commit` - Create smart commits with proper messages
 - `/git:diff` - Analyze changes and implications
+- `/git:pr` - Generate professional PR descriptions
 
 ### Artifact Management
 - `/_artifacts/status` - Display project health and activity
@@ -151,6 +152,13 @@ Analyze uncommitted changes and their implications.
 ```
 /git:diff                 # All changes
 /git:diff staged         # Staged only
+```
+
+#### `/git:pr`
+Generate professional pull request descriptions.
+```
+/git:pr                   # Against inferred base branch
+/git:pr main             # Against specific branch
 ```
 
 ### Artifact Management

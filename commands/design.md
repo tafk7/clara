@@ -2,7 +2,7 @@
 description: Design component structure and architecture
 ---
 
-# /architect
+# /design
 
 <instructions>
 Design component structure and key architectural decisions for a new system.
