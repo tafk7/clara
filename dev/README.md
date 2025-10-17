@@ -32,7 +32,7 @@ The framework rests on three Prime Directives:
 
 ## Command Reference
 
-The framework provides 20 slash commands organized by purpose:
+The framework provides 22 slash commands organized by purpose:
 
 ### Analysis & Understanding
 - `/arete` - Analyze code against Arete principles
@@ -40,6 +40,8 @@ The framework provides 20 slash commands organized by purpose:
 - `/explain` - Deep analysis with educational focus
 - `/profile` - Profile performance and generate optimizations
 - `/edict` - Check compliance with project constraints
+- `/polish` - Analyze code hygiene at micro level
+- `/comments` - Validate comment accuracy and appropriateness
 
 ### Design & Architecture
 - `/architect` - Design component structure and architecture
@@ -90,6 +92,21 @@ Deep analysis with focus on understanding and education.
 ```
 /explain                  # Current directory
 /explain src/parser.py   # Specific file
+```
+
+#### `/polish`
+Line-by-line code hygiene analysis for crystalline clarity.
+```
+/polish                   # Current directory
+/polish src/api.ts       # Specific file
+```
+
+#### `/comments`
+Validate that comments are accurate, appropriately detailed, and not redundant.
+```
+/comments                 # Current directory
+/comments src/           # Specific directory
+/comments lib/utils.py   # Specific file
 ```
 
 ### Design Commands
