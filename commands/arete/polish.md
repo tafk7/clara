@@ -13,7 +13,7 @@ Phase 1 - Inspect: Line-by-line analysis for clarity, redundancy, and essential 
 Phase 2 - Diagnose: Identify specific hygiene issues - naming, structure, idioms, unnecessary abstractions.
 Phase 3 - Prescribe: Suggest precise improvements with before/after examples.
 Priority: Crystalline clarity in every line
-Output: Create analysis in _artifacts/analyses/
+Output: Create analysis in _artifacts/analyses/YYMMDD_HHMM_description.md
 </approach>
 
 <context>

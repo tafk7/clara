@@ -5,15 +5,20 @@ description: Validate comment accuracy and appropriateness
 # /comments
 
 <instructions>
-Analyze comments and docstrings to ensure they are accurate, appropriately detailed for the code's complexity, and not redundantly describing self-evident code.
+Analyze comments to ensure accuracy, then aggressively identify redundant comments that restate what self-documenting code already expresses.
 </instructions>
 
 <approach>
-Phase 1 - Inspect: Review files systematically, checking each comment against actual code behavior.
-Phase 2 - Diagnose: Categorize issues - inaccurate/outdated comments, redundant descriptions of obvious code, inappropriate detail level for complexity.
-Phase 3 - Report: Document problematic comments with specific examples and recommended fixes.
-Priority: Only report problematic comments, not comprehensive surveys
-Output: Create analysis in _artifacts/analyses/
+Phase 1 - Understand: Read implementation to comprehend actual behavior.
+Phase 2 - Validate: Check comments against actual code behavior for accuracy.
+Phase 3 - Assess Necessity: Identify comments describing self-evident code.
+Phase 4 - Report: Document inaccurate comments (fix) and redundant comments (delete).
+
+Philosophy: Self-documenting code is superior to commented code. Only complex algorithms, non-obvious decisions, or "why" explanations justify comments.
+
+Exception: Public function/class docstrings serve automated documentation and IDE tooling - maintain these even when simple, ensuring accuracy and convention compliance (JSDoc, Python docstrings, etc.).
+
+Output: Create analysis in _artifacts/analyses/YYMMDD_HHMM_description.md
 </approach>
 
 <context>

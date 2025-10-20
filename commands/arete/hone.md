@@ -13,7 +13,7 @@ Phase 1 - Scan: Find dead code, unused exports, and temporary artifacts
 Phase 2 - Analyze: Identify duplicate implementations and assess removal safety
 Phase 3 - Report: Generate prioritized cleanup plan with risk levels
 Priority: Safe deletions first, then duplicates, then risky removals
-Output: Create cleanup analysis in _artifacts/analyses/.
+Output: Create cleanup analysis in _artifacts/analyses/YYMMDD_HHMM_description.md
 </approach>
 
 <context>
